@@ -9,8 +9,8 @@
   var xhr = new XMLHttpRequest();
   xhr.open('GET','/LZH.2.2/cate.json',true);
   xhr.send()
-  xhr.onload = function(data){
-  console.log(data)
+  xhr.onload = function(){
+  console.log(JSOM.parse(xhr.responseText))
   }
   </script>
 </body>
