@@ -10,7 +10,7 @@
   xhr.open('GET','/LZH.2.2/cate.json',true);
   xhr.send()
   xhr.onload = function(){
-  console.log(JSOM.parse(xhr.responseText))
+  console.log(JSON.parse(xhr.responseText))
   }
   </script>
 </body>
